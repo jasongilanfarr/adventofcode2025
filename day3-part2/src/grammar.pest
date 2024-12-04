@@ -1,0 +1,7 @@
+int = { ASCII_DIGIT+ }
+
+mul = { "mul(" ~ int ~ "," ~ int ~ ")" }
+doit = { "do()" }
+dont = { "don't()" }
+anything = _{ANY}
+grammar = { (mul | doit | dont | anything)* }
